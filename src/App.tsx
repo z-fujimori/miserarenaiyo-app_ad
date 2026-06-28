@@ -163,6 +163,20 @@ function App() {
             </article>
           ))}
         </div>
+
+        <div className="menu-callout">
+          <div className="menu-callout__copy">
+            <h3>メニューバーから切り替え。</h3>
+            <p>画面上のメニューバーから、Type1 と Type2 を選べます。</p>
+          </div>
+          <div className="menu-callout__visual" aria-label="メニューバーからTypeを切り替える画像">
+            <img
+              className="menu-callout__image"
+              src="/img/menue-bar.png"
+              alt="メニューバーのメニューからType1とType2を切り替える様子"
+            />
+          </div>
+        </div>
       </section>
 
       <section className="section-block section-block--split">

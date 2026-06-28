@@ -200,13 +200,13 @@
 }
 
 .slot--hero {
-  width: min(100%, 430px);
+  width: min(100%, 360px);
   aspect-ratio: 1 / 1;
   background: #f7f4ee;
 }
 
 .slot--wide {
-  min-height: 180px;
+  min-height: 150px;
   margin: 10px 4px 16px;
   background: #f7f4ee;
 }
@@ -289,7 +289,7 @@
 
 .overlay-preview {
   position: relative;
-  min-height: 160px;
+  min-height: 136px;
   border-radius: 22px;
   border: 2px solid #2e2721;
   background: #f7f4ee;
@@ -310,12 +310,12 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 14px;
+  padding: 18px 22px;
 }
 
 .overlay-item {
   position: absolute;
-  inset: 22px 24px 24px;
+  inset: 28px 32px 30px;
   border-radius: 16px;
   border: 2px solid #2e2721;
 }
@@ -356,6 +356,50 @@
   margin: 0;
   color: #2e2721;
   line-height: 1.85;
+}
+
+.menu-callout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 16px;
+  margin-top: 16px;
+  padding: 18px;
+  border: 3px solid #2e2721;
+  border-radius: 28px;
+  background: #f7f4ee;
+  box-shadow: 0 10px 0 #2e2721;
+}
+
+.menu-callout__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu-callout__copy h3 {
+  margin: 0;
+}
+
+.menu-callout__copy p {
+  margin: 0;
+  color: #2e2721;
+  line-height: 1.85;
+}
+
+.menu-callout__visual {
+  min-height: 110px;
+  border-radius: 22px;
+  border: 2px solid #2e2721;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.menu-callout__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .feature-card,
@@ -456,13 +500,17 @@
   }
 
   .slot--wide {
-    min-height: 160px;
+    min-height: 130px;
   }
 
   .feature-grid,
   .overlay-grid,
   .steps-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .menu-callout {
+    grid-template-columns: 1fr;
   }
 
   .hero-facts {
@@ -498,22 +546,30 @@
     grid-template-columns: 1fr;
   }
 
+  .menu-callout {
+    padding: 14px;
+  }
+
+  .menu-callout__visual {
+    min-height: 96px;
+  }
+
   .hero-visual {
     min-height: 320px;
   }
 
   .slot--hero {
-    width: min(100%, 320px);
+    width: min(100%, 280px);
   }
 
   .slot-image--hero {
     object-fit: contain;
-    padding: 14px;
+    padding: 16px;
   }
 
   .slot-image--wide {
     object-fit: contain;
-    padding: 12px;
+    padding: 10px 14px;
   }
 
   .download-side {

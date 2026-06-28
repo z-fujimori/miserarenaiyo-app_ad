@@ -1,0 +1,103 @@
+:root {
+  color-scheme: light;
+  --bg: #e4ded5;
+  --paper: #f7f4ee;
+  --text: #2e2721;
+  --accent: #d96c7a;
+  font-family:
+    'Hiragino Maru Gothic ProN',
+    'Yu Gothic UI',
+    'Yu Gothic',
+    'Noto Sans JP',
+    system-ui,
+    sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+p,
+dl {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-family:
+    'Hiragino Maru Gothic ProN',
+    'Yu Gothic UI',
+    'Noto Sans JP',
+    system-ui,
+    sans-serif;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 5vw, 4.7rem);
+}
+
+h2 {
+  font-size: clamp(1.7rem, 2.8vw, 2.8rem);
+}
+
+h3 {
+  font-size: 1.12rem;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+::selection {
+  color: var(--bg);
+  background: var(--text);
+}
